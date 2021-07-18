@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    background: #000;
+}
+.wrapper{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #000;
+    filter: blur(10px) contrast(20);
+
+}
+.dot--one,
+.dot--two,
+.dot--three {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 50%;
+}
+.dot--one{
+    top: 20%;
+}
+.dot--two{
+    background: #00faff;
+    animation: drop--down 2s cubic-bezier(0.4, 0, 1, 1) infinite;
+}
+.dot--three {
+    top: 80%;
+}
+@keyframes drop--down{
+    0%{top:20%;}
+    100%{top:80%;}
+}
